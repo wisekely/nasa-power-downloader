@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PowerDownloaderDialog</class>
+ <widget class="QDialog" name="PowerDownloaderDialog">
+  <property name="windowTitle">
+   <string>NASA Power Downloader</string>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- ==================== LOCATION ==================== -->
+   <item>
+    <widget class="QGroupBox" name="groupBox_location">
+     <property name="title">
+      <string>Location</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_location">
+      <!-- Single Point -->
+      <item>
+       <widget class="QRadioButton" name="radio_point">
+        <property name="text">
+         <string>Single Point</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_point">
+        <item row="0" column="0">
+         <widget class="QLabel">
+          <property name="text">
+           <string>   Latitude</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="latEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel">
+          <property name="text">
+           <string>   Longitude</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lonEdit"/>
+        </item>
+       </layout>
+      </item>
+
+      <!-- Area / Bounding Box -->
+      <item>
+       <widget class="QRadioButton" name="radio_area">
+        <property name="text">
+         <string>Area (Bounding Box)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QGridLayout" name="gridLayout_area">
+        <item row="0" column="0">
+         <widget class="QLabel">
+          <property name="text">
+           <string>   Top-Left Lat</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="topLatEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel">
+          <property name="text">
+           <string>   Top-Left Lon</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="topLonEdit"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel">
+          <property name="text">
+           <string>   Bottom-Right Lat</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="bottomLatEdit"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel">
+          <property name="text">
+           <string>   Bottom-Right Lon</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="bottomLonEdit"/>
+        </item>
+       </layout>
+      </item>
+
+      <!-- Use Map Extent Button -->
+      <item>
+       <widget class="QPushButton" name="mapExtentButton">
+        <property name="text">
+         <string>Use Current Map Extent</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <!-- ==================== TIME RANGE ==================== -->
+   <item>
+    <widget class="QGroupBox" name="groupBox_time">
+     <property name="title">
+      <string>Time Range</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_time">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_start">
+        <property name="text">
+         <string>Start (YYYYMMDD)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="startEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_end">
+        <property name="text">
+         <string>End (YYYYMMDD)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="endEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <!-- ==================== PARAMETERS ==================== -->
+   <item>
+    <widget class="QGroupBox" name="groupBox_params">
+     <property name="title">
+      <string>Parameters (select one or more)</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_params">
+      <item>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <layout class="QVBoxLayout" name="verticalLayout_scroll">
+          <item><widget class="QCheckBox" name="check_PRECTOT"><property name="text"><string>PRECTOT – Precipitation (mm/day)</string></property><property name="checked"><bool>true</bool></property></widget></item>
+          <item><widget class="QCheckBox" name="check_T2M"><property name="text"><string>T2M – Temperature at 2m (°C)</string></property><property name="checked"><bool>true</bool></property></widget></item>
+          <item><widget class="QCheckBox" name="check_T2M_MAX"><property name="text"><string>T2M_MAX – Maximum Temperature at 2m (°C)</string></property></widget></item>
+          <item><widget class="QCheckBox" name="check_T2M_MIN"><property name="text"><string>T2M_MIN – Minimum Temperature at 2m (°C)</string></property></widget></item>
+          <item><widget class="QCheckBox" name="check_RH2M"><property name="text"><string>RH2M – Relative Humidity at 2m (%)</string></property></widget></item>
+          <item><widget class="QCheckBox" name="check_WS2M"><property name="text"><string>WS2M – Wind Speed at 2m (m/s)</string></property></widget></item>
+          <item><widget class="QCheckBox" name="check_WD2M"><property name="text"><string>WD2M – Wind Direction at 2m (degrees)</string></property></widget></item>
+          <item><widget class="QCheckBox" name="check_ALLSKY_SFC_SW_DWN"><property name="text"><string>ALLSKY_SFC_SW_DWN – All Sky Surface Shortwave Downward Irradiance (kW/m²/day)</string></property><property name="checked"><bool>true</bool></property></widget></item>
+          <item><widget class="QCheckBox" name="check_CLRSKY_SFC_SW_DWN"><property name="text"><string>CLRSKY_SFC_SW_DWN – Clear Sky Insolation (kW/m²/day)</string></property></widget></item>
+          <item><widget class="QCheckBox" name="check_QV2M"><property name="text"><string>QV2M – Specific Humidity at 2m (kg/kg)</string></property></widget></item>
+          <item><widget class="QCheckBox" name="check_PS"><property name="text"><string>PS – Surface Pressure (kPa)</string></property></widget></item>
+          <item><widget class="QCheckBox" name="check_T2MDEW"><property name="text"><string>T2MDEW – Dew Point Temperature at 2m (°C)</string></property></widget></item>
+          <item>
+           <spacer name="verticalSpacer_params">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+
+   <!-- ==================== FORMAT ==================== -->
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_format">
+     <item>
+      <widget class="QLabel" name="label_format">
+       <property name="text">
+        <string>Output Format:</string>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="formatCombo">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>CSV – Comma Separated Values (time series table)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>JSON – Raw API response (for developers)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>NETCDF – NetCDF (.nc) – Best for raster/time series</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>ICASA – Tabular format for agricultural models</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+	 <item>
+ <widget class="QCheckBox" name="check_osm">
+  <property name="text">
+   <string>Load OpenStreetMap Standard as background</string>
+  </property>
+  <property name="checked">
+   <bool>false</bool>
+  </property>
+ </widget>
+</item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+
+   <!-- ==================== PROGRESS BAR ==================== -->
+   <item>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="value">
+      <number>0</number>
+     </property>
+     <property name="textVisible">
+      <bool>true</bool>
+     </property>
+     <property name="visible">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+
+   <!-- ==================== BUTTONS ==================== -->
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_buttons">
+     <item>
+      <widget class="QPushButton" name="downloadButton">
+       <property name="text">
+        <string>Download</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelButton">
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

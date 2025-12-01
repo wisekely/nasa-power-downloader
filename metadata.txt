@@ -1,0 +1,16 @@
+[general]
+name=NASA Power Downloader
+qgisMinimumVersion=3.30
+description=Download NASA POWER climate parameters for a point or area and load into QGIS. Multi-parameter and multi-format (NETCDF/GeoTIFF/CSV/JSON).
+version=1.0.0
+author=Wiseman Kelonye WiseGIS
+email=wisekely@gmail.com
+about=Powerful tool to access NASA POWER Data Access API in QGIS. Features: single point or bounding box download; map canvas click; 50+ parameters (precipitation, temperature, humidity, solar, wind); formats (NetCDF auto-loaded as raster, GeoTIFF, CSV, JSON); date range from 1981 to real-time; progress feedback. Perfect for agriculture, hydrology, renewable energy, climate research. No API key needed.
+repository=https://github.com/wisekely/nasa-power-downloader
+homepage=https://github.com/wisekely/nasa-power-downloader
+tracker=https://github.com/wisekely/nasa-power-downloader/issues
+icon=icon.png
+category=Web
+tags=nasa, power, climate, weather, precipitation, temperature, solar, wind, africa, data download, bounding box, netcdf, csv, json, geotiff
+experimental=False
+deprecated=False
