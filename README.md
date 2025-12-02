@@ -65,6 +65,7 @@ More parameters coming in future versions!
 **Wise Kely**  
 Email: wisekely@gmail.com  
 Twitter/X: @wisekely 
+LinkedIn: (https://www.linkedin.com/in/wiseman-kelonye-21a30933/)
 
 ## License
 
@@ -72,7 +73,7 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 
 ## Thank You!
 
-Your plugin is already helping researchers, farmers, and renewable energy planners across Africa and beyond.
+This plugin is already helping researchers, farmers, and renewable energy planners across Africa and beyond.
 
 Star this repo if you found it useful — it means the world!
 
