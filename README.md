@@ -65,6 +65,7 @@ More parameters coming in future versions!
 **Wise Kely**  
 Email: wisekely@gmail.com  
 Twitter/X: @wisekely 
+
 LinkedIn: (https://www.linkedin.com/in/wiseman-kelonye-21a30933/)
 
 ## License
