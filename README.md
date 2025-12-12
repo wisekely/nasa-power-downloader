@@ -32,6 +32,11 @@ Perfect for agriculture, renewable energy, hydrology, and climate research — e
 Or download manually from the official repository:  
 https://plugins.qgis.org/plugins/nasa_power_downloader/
 
+## 🎥 Video Tutorial
+[![Watch the video](https://img.youtube.com/vi/X7XEv1E62aI/0.jpg)](https://youtu.be/X7XEv1E62aI)
+
+**Watch the full tutorial here:** https://youtu.be/X7XEv1E62aI
+
 ## Quick Usage
 
 1. Open the plugin: **Web → NASA Power Downloader**
