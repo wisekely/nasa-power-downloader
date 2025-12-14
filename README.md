@@ -65,13 +65,15 @@ https://plugins.qgis.org/plugins/nasa_power_downloader/
 
 More parameters coming in future versions!
 
-## Author & Contact
+## 👤 Author & Contact
 
 **Wise Kely**  
 Email: wisekely@gmail.com  
-Twitter/X: @wisekely 
+Twitter/X: @wisekely
+**Wiseman Kelonye**  
 
-LinkedIn: (https://www.linkedin.com/in/wiseman-kelonye-21a30933/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/wiseman-kelonye-21a30933/)
+[![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube)](https://youtu.be/X7XEv1E62aI)
 
 ## License
 
