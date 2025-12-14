@@ -70,10 +70,11 @@ More parameters coming in future versions!
 **Wise Kely**  
 Email: wisekely@gmail.com  
 Twitter/X: @wisekely
+
 **Wiseman Kelonye**  
+Data Specialist | GIS & Remote Sensing | QGIS Plugin Developer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/wiseman-kelonye-21a30933/)
-[![YouTube](https://img.shields.io/badge/YouTube-Watch-red?logo=youtube)](https://youtu.be/X7XEv1E62aI)
 
 ## License
 
